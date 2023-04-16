@@ -92,6 +92,19 @@ div{
     position: relative;
     font-size: 14px;
 }
+.item ul li ul li{
+    display: none;
+    height: 40px;
+    width: 80px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #000000;
+    cursor: default;
+    border-bottom: 1px solid #ccc;
+}
+.item ul li ul li:hover{
+    background-color: #66ccff;
+}
 .one{
      height: 44px;
  }
@@ -105,9 +118,33 @@ ul li{
     float: left;
     width: 100%;
     min-width: 1000px;
-}.a{
+    overflow: hidden;
+}
+.a{
     outline: none;
  }
+.next,.front{
+    width: 23px;
+    height: 61px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 55px;
+    background-color: rgba(0,0,0,.3);
+    cursor: default;
+}
+.next{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    padding-left: 15px;
+}
+.front{
+    position: absolute;
+    left: 0;
+    top: 200px;
+    padding-right: 15px;
+}
 
 .caption{
     display: block;
@@ -129,6 +166,25 @@ ul li{
 }.id-3{
     color: #ffffff;
  }
+.id-3 {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+.id-3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.id-3 img.idd {
+    opacity: 1;
+}
  .blouse{
      clear: both;
      height: 0px;
@@ -140,19 +196,25 @@ ul li{
  .new1{
      float: left;
      width: 285px;
+     cursor: default;
  }
  .new2{
      float: left;
      width: 285px;
      margin: 0 18px;
+     cursor: default;
  }
  .new3{
      width: 285px;
      float: left;
+     cursor: default;
  }
  dl,dt,dd,p{
      margin: 0;
      padding:0;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
  }
  .id-4{
      width: 1000px;
